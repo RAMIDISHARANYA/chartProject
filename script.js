@@ -36,6 +36,7 @@ var data = [{brandname: 'Shirt1', January : 500, February: 400, March:200, April
  Chart.defaults.global.defaultFontFamily = 'Lato';
  Chart.defaults.global.defaultFontSize  =18;
  Chart.defaults.global.defaultFontColor = 'black';
+ Chart.defaults.global.elements.point = 'circle';
 
 var Categoryselect = document.getElementById("Category")
 var ProductSelect = document.getElementById("Product");
@@ -152,7 +153,7 @@ console.log(brandsDisplay)
             },
             title:{
                 display:true,
-                // text:'Largest Cities In Massachusetts',
+                text:'Sales By Month for: ',
 
                 // fontSize:25
                 // label : 
