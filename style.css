@@ -1,0 +1,12 @@
+@chart.width:650px;
+@chart.height:380px;
+@grid.color:#aaa;
+@bar.color:'blue';
+@bar.thickness:100px;
+@bar.rounded:3px;
+@bar.spacing:300px;
+
+
+.chart.wrap[
+    
+]
