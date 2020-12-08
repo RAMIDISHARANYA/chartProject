@@ -23,15 +23,15 @@ var Brands = [
 var data = [{brandname: 'Shirt1', January : 500, February: 400, March:200, April:300 },
 {brandname: 'Shirt2', January : 400, February: 100, March:300, April:200 },
  {brandname: 'Shirt3', January : 300, February: 400, March:200, April:100 },
- {brandname: 'Pant1', January : 500, February: 300, March:400, April:100 },
+ {brandname: 'Pant1', January : 100, February: 300, March:400, April:200 },
  {brandname: 'Pant2', January : 200, February: 400, March:100, April:300 },
  {brandname: 'Pant3', January : 500, February: 400, March:200, April:300 },
- {brandname: 'Cereal1', January : 500, February: 400, March:200, April:300 },
- {brandname: 'Cereal2', January : 500, February: 400, March:200, April:300 } ,
- {brandname: 'Cereal3', January : 500, February: 400, March:200, April:300 },
- {brandname: 'Fruit1', January : 500, February: 400, March:200, April:300 },
+ {brandname: 'Cereal1', January : 500, February: 400, March:200, April:100 },
+ {brandname: 'Cereal2', January : 400, February: 300, March:200, April:100 } ,
+ {brandname: 'Cereal3', January : 500, February: 400, March:200, April:100 },
+ {brandname: 'Fruit1', January : 300, February: 400, March:200, April:100 },
  {brandname: 'Fruit2', January : 500, February: 400, March:200, April:300 },
- {brandname: 'Fruit3', January : 500, February: 400, March:200, April:300 }];
+ {brandname: 'Fruit3', January : 400, February: 300, March:200, April:100 }];
 
  Chart.defaults.global.defaultFontFamily = 'Lato';
  Chart.defaults.global.defaultFontSize  =18;
@@ -141,6 +141,7 @@ console.log(brandsDisplay)
             }]
             
         },
+        
         options: {
             scales: {
                 yAxes: [{
@@ -175,11 +176,22 @@ console.log(brandsDisplay)
                     top:0
                 }
             },
-            tooltips:{
-                // mode: 'sales',
-                // enabled:false
-                 enabled:true
-            }
+            custom: function(tooltipModel) {
+                // Tooltip Element
+                var tooltipEl = document.getElementById('chartjs-tooltip');
+
+                
+                  
+                },
+                // Create element on first render
+               
+            
+            // tooltips:{
+            //     // mode: 'sales',
+            //     // enabled:false
+
+            //      enabled:true
+            // }
         }
     });
 }
