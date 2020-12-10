@@ -177,22 +177,22 @@ console.log(brandsDisplay)
                     top:0
                 }
             },
-            custom: function(tooltipModel) {
-                // Tooltip Element
-                var tooltipEl = document.getElementById('chartjs-tooltip');
+//             custom: function(tooltipModel) {
+//                 // Tooltip Element
+//                 var tooltipEl = document.getElementById('chartjs-tooltip');
 
                 
                   
-                },
+//                 },
                 // Create element on first render
                
             
-            // tooltips:{
-            //     // mode: 'sales',
-            //     // enabled:false
+            tooltips:{
+                // mode: 'sales',
+                // enabled:false
 
-            //      enabled:true
-            // }
+                 enabled:true
+            }
         }
     });
 }
